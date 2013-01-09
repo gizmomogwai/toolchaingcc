@@ -36,7 +36,8 @@ cxx_plugin do |cxx,bbs,log|
         :COMMAND => "g++",
         :SCRIPT => "-T",
         :USER_LIB_FLAG => "-l:",
-        :EXE_FLAG => "-o",
+        :OUTPUT_FLAG => "-o",
+        :SHARED_FLAG => "-shared",
         :LIB_FLAG => "-l",
         :LIB_PATH_FLAG => "-L",
         :ERROR_PARSER => Cxxproject::GCCLinkerErrorParser.new
