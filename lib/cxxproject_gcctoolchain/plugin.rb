@@ -39,6 +39,7 @@ cxx_plugin do |cxx,bbs,log|
         :USER_LIB_FLAG => "-l:",
         :OUTPUT_FLAG => "-o",
         :SHARED_FLAG => "-shared",
+        :SONAME_FLAG => "-Wl,-soname,",
         :LIB_FLAG => "-l",
         :LIB_PATH_FLAG => "-L",
         :ERROR_PARSER => Cxxproject::GCCLinkerErrorParser.new
