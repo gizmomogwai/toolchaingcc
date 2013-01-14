@@ -14,6 +14,7 @@ cxx_plugin do |cxx,bbs,log|
             :OBJECT_FILE_FLAG => "-o",
             :INCLUDE_PATH_FLAG => "-I",
             :COMPILE_FLAGS => "-c -Wall ",
+            :SHARED_FLAGS => '-fPIC',
             :DEP_FLAGS => "-MMD -MF ", # empty space at the end is important!
             :DEP_FLAGS_SPACE => true,
             :PREPRO_FLAGS => "-E -P",
