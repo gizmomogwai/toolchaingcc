@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.description = <<-EOF
     Toolchain supporting GCC
   EOF
-  s.files = `git ls-files`.split($\)
+  s.files = Dir.glob("{bin,lib}/**/*") + %w(README.md)
   s.require_path = "lib"
   s.author = "oliver mueller"
   s.email = "oliver.mueller@gmail.com"
