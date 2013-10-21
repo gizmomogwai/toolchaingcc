@@ -43,6 +43,7 @@ cxx_plugin do
         :SONAME_FLAG => "-Wl,-soname,",
         :LIB_FLAG => "-l",
         :LIB_PATH_FLAG => "-L",
+        :OUTPUT_SUFFIX => {:EXECUTABLE => {:UNIX => '', :OSX => '', :WINDOWS => '.exe'}},
         :ERROR_PARSER => Cxxproject::GCCLinkerErrorParser.new,
         :START_OF_WHOLE_ARCHIVE => {:UNIX => '-Wl,--whole-archive', :OSX => '-force_load', :WINDOWS => '-Wl,--whole-archive'},
         :END_OF_WHOLE_ARCHIVE => {:UNIX => '-Wl,--no-whole-archive', :OSX => '', :WINDOWS => '-Wl,--no-whole-archive'},
