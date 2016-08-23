@@ -1,6 +1,4 @@
-
 cxx_plugin do
-
   require 'errorparser/gcc_compiler_error_parser'
   require 'errorparser/gcc_linker_error_parser'
   require 'cxxproject/buildingblocks/shared_libs_helper'
